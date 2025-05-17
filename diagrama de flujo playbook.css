@@ -1,0 +1,19 @@
+[Inicio]
+   ↓
+[Leer logs SSH (ej. /var/log/auth.log)]
+   ↓
+[Filtrar líneas con "Failed password"]
+   ↓
+[Extraer IPs y marcas de tiempo]
+   ↓
+[Contar intentos por IP en ventana de 5 minutos]
+   ↓
+[¿Alguna IP con >5 intentos?]
+   ├─ NO → [Esperar nuevo ciclo / Fin]
+   └─ SÍ
+        ↓
+   [Enviar alerta por correo]
+        ↓
+   [Bloquear IP desde firewall (simulado)]
+        ↓
+     [Fin]
